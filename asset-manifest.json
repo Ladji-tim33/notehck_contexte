@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "//notehck_contexte/static/css/main.f6d962cb.css",
+    "main.js": "//notehck_contexte/static/js/main.cba7b88b.js",
+    "index.html": "//notehck_contexte/index.html",
+    "main.f6d962cb.css.map": "//notehck_contexte/static/css/main.f6d962cb.css.map",
+    "main.cba7b88b.js.map": "//notehck_contexte/static/js/main.cba7b88b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f6d962cb.css",
+    "static/js/main.cba7b88b.js"
+  ]
+}
