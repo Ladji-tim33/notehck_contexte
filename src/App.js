@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
+import Myinput from './Form/MyInput';
+import Mylist from './Affichage/Mylist';
+import ClearAll from './Affichage/ClairAll';
+import Notes from './Affichage/Note';
+import Header from "./Header/Header";
+import TodoContext from './ListesContexte';
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className=" App pt-5">
+      <div className="container ">
+      <TodoContext>
+        <Header />
+          <Myinput name="text" ></Myinput>
+        
+        <div className="mt-3 bg-white p-3 rounded">
+          <div className="d-flex justify-content-between ">
+            <Notes  />
+            <ClearAll  />
+          </div>
+          <hr />
+          <Mylist />
+         
+        </div>
+        </TodoContext>
+      </div>
     </div>
+
   );
 }
 
 export default App;
+
